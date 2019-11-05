@@ -31,6 +31,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'w0rp/ale'
 	Plug 'Ashkettle/rainbow'
 	Plug 'jiangmiao/auto-pairs'
+	Plug 'kien/ctrlp.vim'
 
 " Enable the list of buffers
 let g:airline#extensions#tabline#enabled = 1
@@ -121,6 +122,8 @@ endif
 
 autocmd FileType javascript setlocal shiftwidth=4 tabstop=4 softtabstop=0 expandtab
 set clipboard=unnamedplus
+
+map \ :CtrlP<CR>
 
 "easy window navigation
 nnoremap <silent> <c-l> <c-w>l
